@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Waypoint from 'react-waypoint';
 
+
 class WhenLeavingView extends Component {
   constructor(props) {
     super(props);

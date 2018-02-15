@@ -12,7 +12,7 @@ class Header extends Component {
   }
 
   toggleMenu(){
-    var toggler = !this.state.togglerIsToggled;
+    let toggler = !this.state.togglerIsToggled;
     if (toggler === true) {
       document.getElementById('header').classList.remove('header-mobile-drop');
     } else {
@@ -22,6 +22,7 @@ class Header extends Component {
       togglerIsToggled: toggler
       });
   }
+
   render(){
     return(
       <header id="header" className="header-mobile">
@@ -39,6 +40,7 @@ class Header extends Component {
             <Link className="nav-link" to="/sponsors">Sponsors</Link>
           </nav>
         </div>
+
       </header>
     );
   }

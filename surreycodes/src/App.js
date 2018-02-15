@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './components/App.css';
 import Header from './components/Header';
 import Meetup from './components/Meetup';
 import Hook from './components/Hook';
@@ -14,22 +14,10 @@ import WhenLeavingView from './components/WhenLeavingView';
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-
-    };
-    this.handleScroll = this.handleScroll.bind(this);
-  }
-
-  handleScroll(){
-    alert("hey");
-  }
 
   render() {
     return (
-      <div className="App" onScroll={this.handleScroll}>
+      <div className="App">
         <WhenLeavingView>
           {({ isLeavingView }) =>
             <Header animate={isLeavingView}/>
